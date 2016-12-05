@@ -3,6 +3,7 @@ package problems
 import util.FileUtils
 
 object Day3 {
+
   def main(args: Array[String]): Unit = {
     val input = FileUtils.readAllLines("/3.txt")
     part1(input)

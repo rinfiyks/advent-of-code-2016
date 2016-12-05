@@ -1,10 +1,9 @@
 package problems
 
 import util.FileUtils
-//import java.util.Map
-//import java.util.HashMap
 
 object Day4 {
+
   def main(args: Array[String]): Unit = {
     val input = FileUtils.readAllLines("/4.txt")
     part1(input)
