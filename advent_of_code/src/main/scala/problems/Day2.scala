@@ -10,7 +10,7 @@ object Day2 {
     part2(input)
   }
 
-  private def part1(input: List[String]) = {
+  def part1(input: List[String]) = {
     var xPos = 1
     var yPos = 1
 
@@ -29,7 +29,7 @@ object Day2 {
     println
   }
 
-  private def part2(input: List[String]) = {
+  def part2(input: List[String]) = {
     var keypad: Array[Array[Char]] = Array(
       Array('0', '0', '1', '0', '0'),
       Array('0', '2', '3', '4', '0'),

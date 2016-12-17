@@ -11,7 +11,7 @@ object Day5 {
     part2(input)
   }
 
-  private def part1(input: String) = {
+  def part1(input: String) = {
     var password: String = ""
     var index: Int = 0
     var messageDigest: MessageDigest = MessageDigest.getInstance("MD5")
@@ -28,7 +28,7 @@ object Day5 {
     println(password)
   }
 
-  private def part2(input: String) = {
+  def part2(input: String) = {
     var password: Array[Char] = ("_" * 8).toCharArray
     var index: Int = 0
     var messageDigest: MessageDigest = MessageDigest.getInstance("MD5")

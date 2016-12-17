@@ -15,7 +15,7 @@ object Day1 {
     part2(input)
   }
 
-  private def part1(input: List[String]) = {
+  def part1(input: List[String]) = {
     var instructions: Array[String] = input(0).replace(" ", "").split(',')
 
     var direction = 0
@@ -39,7 +39,7 @@ object Day1 {
     println(math.abs(p.getX) + math.abs(p.getY))
   }
 
-  private def part2(input: List[String]) = {
+  def part2(input: List[String]) = {
     var instructions: Array[String] = input(0).replace(" ", "").split(',')
 
     var direction = 0

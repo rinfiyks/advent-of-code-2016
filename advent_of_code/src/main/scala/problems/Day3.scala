@@ -10,7 +10,7 @@ object Day3 {
     part2(input)
   }
 
-  private def part1(input: List[String]) = {
+  def part1(input: List[String]) = {
     var count: Int = 0
 
     for (line <- input) {
@@ -24,7 +24,7 @@ object Day3 {
     println(count)
   }
 
-  private def part2(input: List[String]) = {
+  def part2(input: List[String]) = {
     var count: Int = 0
     var iter: Iterator[String] = input.toIterator
 
@@ -45,10 +45,10 @@ object Day3 {
   }
 
   private def parseLine(line: String): Array[Int] = {
-    line.trim().split("\\s+").map { x => x.toInt }
+    line.trim().split("\\s+").map(_.toInt)
   }
 
   private def isValidTriangle(corners: Array[Int]): Boolean = {
-    corners.filter { x => 2 * x >= corners.sum }.length == 0
+    corners.filter(_ * 2 >= corners.sum).length == 0
   }
 }

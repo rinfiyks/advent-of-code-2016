@@ -10,7 +10,7 @@ object Day4 {
     part2(input)
   }
 
-  private def part1(input: List[String]) = {
+  def part1(input: List[String]) = {
     var sectorSum: Int = 0
     for (line <- input) {
       var name: String = line.substring(0, line.length() - 11).replaceAll("-", "")
@@ -24,7 +24,7 @@ object Day4 {
     println(sectorSum)
   }
 
-  private def part2(input: List[String]) = {
+  def part2(input: List[String]) = {
     for (line <- input) {
       var name: String = line.substring(0, line.length() - 11)
       var sector: Int = line.substring(line.length() - 10, line.length() - 7).toInt
